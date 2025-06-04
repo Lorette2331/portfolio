@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --header-bg-color: rgba(218, 56, 159, 0.133);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: maPolice;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 36px;
+    color: blue;
+    text-decoration: underline solid rgb(210, 101, 212);
+}
+
+.centered-title {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+header {
+    background-color: var(--header-bg-color);
+
+    color: rgb(232, 9, 158);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+header li {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 3px 8px;
+    border: 2px solid #f26687;
+    border-radius: 25px;
+    border-style: double ridge;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+header li:hover {
+    transform: scale(1.1);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header li a {
+    text-decoration: none;
+    color: rgb(122, 106, 106);
+    display: inline-block;
+    padding: 10px 20px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+header li a:hover {
+    transform: scale(1.1);
+
+    box-shadow: 0 4px 8px rgba(7, 7, 8, 0.3);
+}
+
+
+
+#apropos,
+#mesprojets {
+    max-width: 800px;
+
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+#apropos:hover,
+#mesprojets:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+#apropos p,
+#mesprojets p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-box {
+    max-width: 600px;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p1,
+p2 {
+    font-size: 1em;
+    color: #db2525;
+    line-height: 1.5;
+}
+
+
+
+
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header li {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    #apropos,
+    #mesprojets {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .footer-box {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .centered-title {
+        font-size: 1.2em;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    header li {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #apropos,
+    #mesprojets {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .footer-box {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .centered-title {
+        font-size: 1em;
+    }
+}
+
+.small-images-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.small-images-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}

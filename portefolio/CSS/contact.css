@@ -1,0 +1,135 @@
+section {
+    font-size: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: maPolice;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 36px;
+    color: blue;
+    text-decoration: underline solid rgb(210, 101, 212);
+}
+
+.centered-title {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+main section ul li {
+    display: inline-block
+}
+
+
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header li {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 3px 8px;
+    border: 2px solid #f26687;
+    border-radius: 25px;
+    border-style: double ridge;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+}
+
+header li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header li a {
+    text-decoration: none;
+    color: rgb(122, 106, 106);
+    display: inline-block;
+    padding: 10px 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header li a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(7, 7, 8, 0.3);
+}
+
+
+
+header li>a {
+    color: rgb(122, 106, 106)
+}
+
+
+.centered-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header li {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+
+
+    .footer-box {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .centered-title {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    header li {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+
+
+    .footer-box {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .centered-title {
+        font-size: 1em;
+    }
+}
